@@ -19,13 +19,15 @@ public static class SeedData
 
             
             
+            
+            
             // Look for any Books.
-            if (Book.Any())
+            if (context.Book.Any())
             {
                 return;   // DB has been seeded
             }
 
-            Book.AddRange(
+            context.Book.AddRange(
                 new Book
                 {
                     Title = "When Harry Met Sally",
