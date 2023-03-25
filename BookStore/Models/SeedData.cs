@@ -17,6 +17,8 @@ public static class SeedData
                 throw new ArgumentNullException("Null RazorPagesBookContext");
             }
 
+            
+            
             // Look for any Books.
             if (Book.Any())
             {
