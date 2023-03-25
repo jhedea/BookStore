@@ -24,14 +24,13 @@ namespace BookStore.Pages.Books
             return Page();
         }
 
-        [BindProperty]
-        public Book Book { get; set; } = default!;
-        
+        [BindProperty] public Book Book { get; set; } = default!;
+
 
         // To protect from overposting attacks, see https://aka.ms/RazorPagesCRUD
         public async Task<IActionResult> OnPostAsync()
         {
-          if (!ModelState.IsValid || _context.Book == null || Book == null)
+            if (!ModelState.IsValid || _context.Book == null || Book == null)
             {
                 return Page();
             }
