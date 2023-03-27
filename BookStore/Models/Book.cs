@@ -17,5 +17,6 @@ public class Book
 
     public decimal Price { get; set; }
 
-    
+    public string Rating { get; set; } = string.Empty;
+
 }
